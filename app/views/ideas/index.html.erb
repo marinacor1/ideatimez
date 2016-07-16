@@ -1,6 +1,17 @@
 <h1>All Ideas</h1>
+<div class="idea-table">
 <% @ideas.each do |idea| %>
 <%=  idea.title%>
 <%= idea.description %>
 <%= idea.quality %>
 <% end %>
+</div>
+<div id="idea-form">
+  <form>
+    Title: <br>
+    <input type="text" name="ideatitle"><br>
+    Body: <br>
+    <input type="text" name="ideatitle">
+    <input type="submit" value="Submit">
+  </form>
+</div>
