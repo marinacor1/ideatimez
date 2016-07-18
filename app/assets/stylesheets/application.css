@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+
+#idea-table {
+  color:black;
+  border-color: black;
+}
