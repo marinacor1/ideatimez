@@ -1,3 +1,4 @@
 $(document).ready(function(){
-  postAllIdeas();
+  postAllIdeas('#idea-table');
+  ideaForm('#idea-form');
 });

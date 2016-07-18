@@ -14,11 +14,7 @@ function renderIdeas(selector){
 	};
  }
  function formatIdea(idea) {
-   console.log ("idea is " + idea.title);
-   console.log ("body is " + idea.description);
-   console.log ("quality is " + idea.quality);
    return '<div id="idea-table"><ul>' + 'Title:' +idea.title +
    '</ul><ul>Body:' + idea.description + '</ul><ul>Quality: '+ idea.quality + '</ul></div>';
  }
 }
-postAllIdeas('#idea-table');
