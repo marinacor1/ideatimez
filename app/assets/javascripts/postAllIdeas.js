@@ -1,8 +1,8 @@
-function postAllIdeas(selector){
+function load(selector){
     $.ajax({
       type: "GET",
       url: "api/v1/ideas",
-      success: renderIdeas(selector),
+      success: renderIdeas(selector)
     });
 
 function renderIdeas(selector){
@@ -14,7 +14,7 @@ function renderIdeas(selector){
 	};
  }
  function formatIdea(idea) {
-   return '<div id="idea-table"><ul>' + 'Title:' +idea.title +
-   '</ul><ul>Body:' + idea.description + '</ul><ul>Quality: '+ idea.quality + '</ul></div>';
+   return '<div id="idea-table"><ul>' + 'Title: ' +idea.title +
+   '</ul><ul>Body: ' + idea.description + '</ul><ul>Quality: '+ idea.quality + '</ul></div>';
  }
 }

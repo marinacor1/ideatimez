@@ -1,4 +1,5 @@
 $(document).ready(function(){
-  postAllIdeas('#idea-table');
+  load('#idea-table');
   ideaForm('#idea-form');
+  postNewIdea('#idea-form');
 });

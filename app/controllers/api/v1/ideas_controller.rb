@@ -2,14 +2,17 @@ class Api::V1::IdeasController < ApplicationController
   respond_to :json
 
   def index
+    binding.pry
     respond_with Idea.all
   end
 
   def create
+    binding.pry
     respond_with Idea.create(idea_params)
   end
 
   def update
+    binding.pry
     idea = Idea.find(params['id'])
     if params[:changeValue]
       idea.quality = idea.change_quality(params['changeValue'])
