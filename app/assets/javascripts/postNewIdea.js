@@ -6,7 +6,16 @@ function postNewIdea(selector){
     type: "POST",
     url: "api/v1/ideas",
     data: {title: newTitle, body: newBody},
-    success: renderIdeas(selector)
+    success: function (response){
+      var $target = '#idea-form';
+      $target.prepend(formatIdea(idea));
+      clearTextFields();
+    }
   });
 });
+}
+
+function clearTextFields(){
+  $('#idea-t').val() = "";
+  $('#idea-b').val() = "";
 }
