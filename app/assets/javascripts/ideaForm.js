@@ -5,8 +5,8 @@
 
   function formatForm(){
   return '<div id="idea-form">' +
-  '<form>Title: <br>' +
+  '<form>Idea Title: <br>' +
     '<input type="text" name="ideatitle" class="idea-title"><br>' +
-  'Body: <br> ' + '<input type"text" class="idea-body" name="ideatitle">' +
+  'Idea Body: <br> ' + '<input type"text" class="idea-body" name="ideatitle">' +
   '<input type="submit" value="Submit"> </form></div>';
 }
